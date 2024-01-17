@@ -17,4 +17,3 @@ while True:
     red.off()
     amber.off()
     
-    
