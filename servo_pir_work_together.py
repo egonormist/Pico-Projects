@@ -12,8 +12,8 @@ def motor(prop):
 
 def movement():
     if motion.value() ==1:
-        servo.duty_u16(motor(45))
-        sleep(2)
+        servo.duty_u16(motor(90))
+        sleep(5)
     
     else:
         servo.duty_u16(motor(0))
