@@ -1,4 +1,4 @@
-from machine import Pin
+7  12:40 19/01/2024from machine import Pin
 from utime import sleep
 photosensor=Pin(0,Pin.IN)
 led=Pin(3,Pin.OUT)

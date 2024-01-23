@@ -19,4 +19,4 @@ def motion_det():
 		utime.sleep(1)
 
 while True:
-	motion_det()
+	motio
