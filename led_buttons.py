@@ -43,14 +43,14 @@ def webpage(state):
 </head>
 <body>
 <div class="row">
-    <div class = "col-sm-4">
+    <div class = "col-sm-12">
        <form action="./lighton">
             <div class="mb-0 mt-5 mx-5">
                 <button type="submit"  class="btn btn-danger" value="Light on">Light on</button>
             </div>
         </form>
     </div>
-    <div class = "col-sm-4">
+    <div class = "col-sm-12">
        <form action="./lightoff">
             <div class="mb-0 mt-2 mx-5">
                 <button type="submit"  class="btn btn-primary" value="Light off">Light off</button>
