@@ -29,6 +29,11 @@ while True:
     utime.sleep(1)
     if sensor.relative_humidity <= 50:
         servo.duty_u16(motion(140))
+        pourwater.on()
+        utime.sleep(1)
+        pourwater.off()
     else:
         servo.duty_u16(motion(60))
-    
+        ok.on()
+        utime.sleep(1)
+        ok.off()
