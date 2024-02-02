@@ -14,12 +14,6 @@ def motion(angle):
     value =(6550/180)*angle + 1638
     print(int(value))
     return int(value)
-
-if sensor.relative_humidity <= 50:
-    servo.duty_u16(motion(140))
-else:
-    servo.duty_u16(motion(0))
-    
 while True:
     temperature = round(sensor.temperature, 2)
     humidity = round(sensor.relative_humidity, 2)
@@ -27,7 +21,7 @@ while True:
     print("Humidity: ", humidity, "%")
     print()
     utime.sleep(1)
-    if sensor.relative_humidity <= 50:
+    if sensor.relative_humidity <= 60:
         servo.duty_u16(motion(140))
         pourwater.on()
         utime.sleep(1)
