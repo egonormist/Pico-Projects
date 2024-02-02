@@ -16,9 +16,7 @@ def ultra():
    #setting the pulse
 
    trigger.low()
-   utime.sleep_us(1)
    trigger.high()
-   utime.sleep_us(1)
    trigger.low()
    
    #timestamps
@@ -30,24 +28,23 @@ def ultra():
    distance = (timepassed * 0.0343) / 2
    if distance <=50:
        stop.on()
-       utime.sleep(1)
+       utime.sleep(0.1)
        stop.off()
        servo.duty_u16(motion(30))
-       utime.sleep(1)
+       
     
    else:
        go.on()
-       utime.sleep(1)
+       utime.sleep(0.1)
        go.off()
-       utime.sleep(1)
        servo.duty_u16(motion(160))
-       utime.sleep(1)
+       
    print("The distance from object is ",distance,"cm")
 
 def motion(angle):
-    writevalue=(6554/180)*angle + 1638
-    print(int(writevalue))
-    return int(writevalue)
+    value=(6554/180)*angle + 1638
+    print(int(value))
+    return int(value)
     
    
 while True:
