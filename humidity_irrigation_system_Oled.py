@@ -67,5 +67,4 @@ while True:
     oled.show()
     
     utime.sleep(0.5)
-=======
->>>>>>> 64351eb667528cfcaef4657f99c04998532e2f44
+
